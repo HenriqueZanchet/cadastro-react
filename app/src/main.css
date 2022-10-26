@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root {
+    font-family: 'Raleway', sans-serif;
+    --second-color: #00ADB5;
+    --background-color: #222831;
+    --mid-color: #393E46;
+    --main-color: #00FFF5;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: var(--background-color);
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.modal {
+    border: 1px solid var(--second-color);
+    background-color: var(--mid-color);
+    box-shadow: 0px 0px 23px -4px var(--main-color);
+    border-radius: 5px;
+    padding: 1em;
+    margin: 2em;
+}
+
+button {
+    outline: none;
+    border: 2px solid transparent;
+    background-color: transparent;
+    color: var(--second-color);
+    cursor: pointer;
+    margin: 4px;
+}
+
+button:hover {
+    border-bottom: 2px solid var(--main-color);
+}
+
+.modal h1 {
+    display: block;
+    border-bottom: 1px solid var(--main-color);
+    margin-bottom: .5em;
+    padding-top: .5em;
+    margin: 0 0 .25em 0;
+    padding: 0;
+    color: var(--main-color);
+}
+
+.modal form > div {
+    margin-bottom: 1em;
+}
+
+.modal form > div > label {
+    color: var(--second-color);
+    display: block;
+}
+
+.modal form > div > input {
+    width: 100%;
+}
+
+.modal div.action {
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid var(--main-color);
+    margin-top: .5em;
+    padding-top: .5em;
+}
+
+input::placeholder {
+    color: var(--second-color);
+    opacity: .20;
+
+}
+
+input, input:focus, select:focus {
+    padding: 4px 8px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 0;
+    border: 0.075px solid var(--main-color);
+    outline: 0;
+    background-color: var(--background-color);
+    opacity: 0.80;
+    color: var(--second-color);
+}
